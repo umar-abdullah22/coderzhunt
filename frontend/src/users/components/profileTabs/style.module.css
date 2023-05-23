@@ -1,0 +1,340 @@
+.profileRight {
+  float: left;
+  width: 75%;
+}
+.profileRight {
+  margin-bottom: 50px;
+}
+.profileRightl{
+  float: left;
+  width: 34%;
+  margin-right: 1%;
+}
+.profileRightr{
+  float: left;
+  width: 64%;
+  margin-left: 1%;
+}
+.clear{
+  clear: both;
+}
+
+
+.profileDetailsRight ol {
+  margin-top: 30px;
+  list-style: none;
+  counter-reset: muffins;
+  position: relative;
+}
+.profileDetailsRight ol:before {
+  content: '';
+  position: absolute;
+  border-right: 1px solid #444;
+  height: 80%;
+  width: 1px;
+  left: 18px;
+  top: 5px;
+}
+.profileDetailsRight ol li {
+  margin-bottom: 13px;
+  padding-bottom: 8px;
+  counter-increment: muffins;
+  padding-left: 60px;
+  position: relative;
+  line-height: unset;
+  
+}
+.profileDetailsRight ol li:before {
+  content: counter(muffins);
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  background-color: #cccccc;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 4px 4px;
+  font-size: 0px;
+  color: #000;
+  font-weight: bold;
+}
+.doneSection{
+  background-color: #16a34a;
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+}
+.pendingSection{
+  background-color: #6366f1;
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+}
+.profileDetailsRight ol li svg{
+  padding-top: 11px;
+}
+
+.profileDetailsRight ol li h4 {
+  font-size: 16px;
+  color: rgb(68, 68, 68);
+  margin: 5px 0;
+  clear: both;
+}
+.profileDetailsRight ol li h4 > p {
+  background-color: rgb(119, 177, 246);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  text-transform: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  float: right;
+}
+.profileDetailsRight ol li h4 > p img {
+  padding: 8px 10px;
+}
+.profileDetailsRight ol li p {
+  font-size: 16px;
+  color: #c1c1c3;
+  margin: 5px 0;
+}
+.formGroup label{
+  display: inline-block;
+  clear: both;
+  width: 100%;
+  font-size: 14px;
+}
+.formGroup input[type="text"], .formGroup input[type="text"]:focus,
+.formGroup input[type="password"], .formGroup input[type="password"]:focus,
+.formGroup input[type="email"], .formGroup input[type="email"]:focus,
+.formGroup input[type="tel"], .formGroup input[type="tel"]:focus,
+.formGroup input[type="date"], .formGroup input[type="date"]:focus, 
+.formGroup select, .formGroup select{
+  display: inline-block;
+  clear: both;
+  width: 100%;
+  outline: 1px solid #ccc;
+  height: 40px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.formGroup textarea{
+  display: inline-block;
+  clear: both;
+  width: 100%;
+  outline: 1px solid #ccc;
+  height: 100px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.fromGroupHalf{
+  float: left;
+  width: 46%;
+  margin: 0 2%;
+  margin-bottom: 20px;
+}
+.fromGroupFull{
+  float: none;
+  width: 96%;
+  margin: 0 2%;
+  margin-bottom: 20px;  
+  clear: both;
+}
+.formGroup h4{
+  margin: 20px 0 10px;
+}
+.multiImages{
+
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+.multiImages img{
+  width: 90px;
+  height: 160px;
+  max-width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.multipleUploadButton, .multipleUploadButton:hover{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  float: left;
+  background-color: #ff7c6d;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.multiProfilenone{
+  display: none;
+}
+.multiProfilenone + .multipleUploadButton{
+  margin: 10px 0 20px;
+}
+.profileRightfields{
+  background-color: #fff;
+  padding: 20px 10px;
+}
+button.profileRightButton{
+  text-align: right;
+  float: right;
+  clear: both;
+  margin: 30px 0px 50px;
+  background-color: #ff7c6d;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.fromGroupcheckbox input[type="checkbox"]{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.fromGroupcheckbox input[type="checkbox"] +label{
+  margin: 0;
+  padding-bottom: 0;
+}
+.fromGroupcheckbox label{
+  display: inline-block;
+  width: auto;
+}
+.fromGroupcheckbox label h4{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.fromGroupcheckbox label p{
+  margin-bottom: 0;
+}
+.fromGroupradio p{
+  margin-bottom: 0;
+}
+.fromGroupradio input[type="radio"]{
+  margin-right: 10px;
+}
+.fromGroupradio h4{
+  margin-top: 0;
+}
+
+
+.file_upload {
+  display: none;
+}
+.profile_pic {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  float: left;
+  border-radius: 50%;
+}
+.circle {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  float: left;
+  border-radius: 50%;
+}
+/* .p_image { 
+position: absolute;
+top: 167px;
+right: 30px;
+color: #666666;
+transition: all .3s cubic-bezier(.175, .885, .32, 1.275); 
+} */
+.p_image{
+  position: relative;
+  float: left;
+}
+.p_image input[type="file"]{
+  position: absolute;
+  top: 0;
+
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.p_image p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.p_image:hover {
+transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.upload_button {
+  float: left;
+  vertical-align: unset;
+  margin-top: 40px;
+  margin-left: 30px;
+  background-color: #ff7c6d;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+
+.upload_button:hover {
+transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+float: left;
+vertical-align: unset;
+margin-top: 40px;
+margin-left: 30px;
+background-color: #ff7c6d;
+color: #fff;
+font-size: 14px;
+padding: 10px 20px;
+border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

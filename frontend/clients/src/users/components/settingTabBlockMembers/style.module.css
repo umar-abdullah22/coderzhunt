@@ -1,0 +1,102 @@
+.setting_block_element h2 {
+  font-size: 17px;
+  color: #666;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+.setting_block_element h3 {
+  font-size: 15px;
+  color: #999;
+  margin-top: 5px;
+}
+
+.userFrav {
+  float: left;
+  width: 100%;
+}
+
+.userFavrInner {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.userFavrInner img {
+  max-width: 100px;
+  width: 100%;
+}
+
+.userFavrInner p {
+  margin: 0;
+  font-size: 15px;
+  color: #999;
+}
+
+.ProfileVisitmain {
+  float: left;
+  width: 100%;
+}
+
+.ProfileVisitInner {
+  background-image: url(../../../assets/images/userP.jpg);
+  background-position: 50%;
+  background-size: cover;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 320px;
+  position: relative;
+  width: 31%;
+  float: left;
+  margin: 15px 1%;
+  border-radius: 20px;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.ProfileVisitInner {
+}
+
+.ProfileVisitInner p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.clear {
+  clear: both;
+}
+
+.ProfileVisitInner .ProfileLock {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  padding: 19px;
+}
+
+.ProfileVisitMessage {
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  text-align: center;
+  width: 100%;
+  /* height: 50%; */
+}
+.ProfileVisitMessage img {
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+}

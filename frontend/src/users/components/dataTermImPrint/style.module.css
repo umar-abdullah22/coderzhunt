@@ -1,0 +1,49 @@
+.mainDiv {
+  background-color: #3c3c3c;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+}
+.innerdiv {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+.innerdiv .logoSec img {
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+}
+.logoSec {
+  float: left;
+  width: 50%;
+}
+.homeLink {
+  float: left;
+  width: 50%;
+  text-align: right;
+  margin-top: 20px;
+}
+.homeLink a {
+  color: #bdbdbd;
+  font-size: 14px;
+  text-decoration: none;
+}
+.clear {
+  clear: both;
+}
+
+.innerdiv ul {
+  margin: 20px 0 0;
+  padding: 0;
+}
+.innerdiv ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 10px 0px 10px;
+  margin: 0px 20px;
+}
+.innerdiv ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+}

@@ -1,0 +1,39 @@
+.ProfileVisitmain {
+  float: left;
+  width: 75%;
+}
+.ProfileVisitInner {
+  background-image: url(../../../assets/images/userP.jpg);
+  background-position: 50%;
+  background-size: cover;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 320px;
+  position: relative;
+  width: 31%;
+  float: left;
+  margin: 15px 1%;
+  border-radius: 20px;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.ProfileVisitInner {
+}
+.ProfileVisitInner p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.clear {
+  clear: both;
+}
+.ProfileVisitInner .ProfileLock {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  padding: 19px;
+}

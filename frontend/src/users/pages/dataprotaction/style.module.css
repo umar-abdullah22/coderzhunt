@@ -1,0 +1,27 @@
+/* .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0px 20px;
+} */
+ul {
+  margin: 0px 0px 0px 20px;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+p,
+li,
+a {
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000;
+}
+table tr td {
+  padding: 10px;
+  color: #000;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}

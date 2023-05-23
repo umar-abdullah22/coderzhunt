@@ -1,0 +1,98 @@
+.ProfileVisitmain {
+  float: left;
+  width: 100%;
+}
+
+.ProfileVisitInner {
+  transition: all 0.5s;
+  overflow: hidden;
+  position: relative;
+  width: 31%;
+  float: left;
+  margin: 15px 1%;
+  border-radius: 20px;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.ProfileVisitInner img{
+  height: 320px; 
+  object-fit: cover;
+  width: 100%;
+  border-radius: 20px;
+  border-radius: 20px;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.imageMain{
+  position: relative;
+}
+.imageMain:before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.locakProfileContent{
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+}
+
+
+.ProfileVisitInner {
+}
+
+.ProfileVisitInner p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.ProfileVisitInner .ProfileLock {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  padding: 19px;
+}
+
+.ProfileVisitMessage {
+  text-align: center;
+}
+
+.unlockbtn{
+  padding: 7px 25px;
+  border: none;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ProfileVisitMessage img {
+  width: 100px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 786px) {
+  .ProfileVisitInner {
+    width: 46%;
+  }
+}
+@media (max-width: 485px) {
+  .ProfileVisitInner {
+    width: 98%;
+  }
+}

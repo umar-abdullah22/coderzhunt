@@ -1,0 +1,282 @@
+.userHeaderSec {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1220px;
+  /* margin: 0 auto 20px; */
+  position: relative;
+  z-index: 2;
+  padding: 0px 20px;
+}
+.countNumber {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  background-color: #fa4b33;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 10px;
+  line-height: 19px;
+}
+.UserLeftNavigation {
+  max-width: 1220px;
+  /* margin: auto; */
+  position: relative;
+  z-index: 2;
+}
+
+.clear {
+  clear: both;
+}
+.mainContainer {
+  min-height: 100%;
+  position: relative;
+}
+.userLetfMenu {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+  position: relative;
+}
+.usernaviright {
+  float: left;
+  width: 75%;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+.imgUser,
+.contentUuser {
+  float: left;
+  vertical-align: middle;
+}
+.imgUser img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #8e909f;
+}
+.contentUuser img {
+  width: 26px;
+  height: 26px;
+}
+.contentUuser {
+  padding-left: 10px;
+}
+.contentUuser h3 {
+  font-size: 16px;
+  color: #b3b3b5;
+  margin-bottom: 2px;
+  line-height: 15px;
+  margin-top: 0;
+  padding-top: 10px;
+}
+.contentUuser a {
+  text-decoration: none;
+}
+.contentUuser p,
+.contentUuser img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 5px;
+}
+.contentUuser span {
+  color: #a5a5a6;
+  font-size: 13px;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.userLeftNav {
+  clear: both;
+  margin-top: 20px;
+  display: inline-block;
+  width: 100%;
+}
+.userLeftNav ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.userLeftNav ul li {
+  list-style: none;
+  margin: 25px 0px;
+}
+.userLeftNav ul li a,
+.userLeftNav ul li button {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.userLeftNav ul li a:hover,
+.userLeftNav ul li button:hover {
+  color: #ec2079;
+}
+.userLeftNav ul li img {
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.userLeftNav ul li fill {
+  color: #cbcbcb;
+}
+.UserleftSuprise {
+  text-align: center;
+  margin: 25px 0px;
+  padding: 25px 0px;
+}
+.UserleftSuprise .img1dice,
+.UserleftSuprise .img2dice {
+  width: 36px;
+  text-align: center;
+  display: block;
+  margin: 0 auto 10px;
+}
+.UserleftSuprise .img2dice {
+  display: none;
+}
+.UserleftSuprise:hover .img1dice {
+  display: none;
+}
+.UserleftSuprise:hover .img2dice {
+  display: block;
+}
+.UserleftSuprise a {
+  font-size: 17px;
+  color: #ababab;
+  clear: both;
+  display: block;
+}
+.UserleftSuprise:hover a {
+  font-size: 17px;
+  color: #ec2079;
+}
+.UserleftSuprise p,
+.UserleftSuprise:hover p {
+  color: #777;
+}
+
+.userCopyright {
+  position: relative;
+  margin-bottom: 20px;
+}
+.userCopyright ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.userCopyright ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 10px;
+}
+.userCopyright ul li a {
+  color: #ababab;
+  font-size: 14px;
+  text-decoration: none;
+}
+.userCopyright p {
+  margin: 0;
+  font-size: 15px;
+  color: #ababab;
+  text-align: center;
+}
+
+.countNumber {
+  position: absolute;
+  top: 40px;
+  left: 18px;
+  background-color: #fa4b33;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 10px;
+  line-height: 19px;
+}
+.mobileVersion img {
+  width: 28px;
+}
+.mobileHidden {
+  display: block;
+}
+.mobileVersion {
+  display: none;
+}
+
+.footer {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .mobileHidden {
+    display: none; /* Show the mobileVersion div on smaller screens */
+  }
+  .mobileVersion {
+    display: block;
+    position: absolute;
+    top: -7rem;
+    left: 20px;
+  }
+  .userLetfMenu,
+  .usernaviright {
+    width: 100%;
+    float: none;
+  }
+  .userHeaderSec {
+    display: block;
+    text-align: center;
+  }
+  .mobileVersion + div {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px #bbb inset, 0px 0px 15px #bbb;
+    margin: 0px 5px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .contentUuser {
+    float: none;
+    display: inline-block;
+  }
+  .imgUser,
+  .contentUuser {
+    display: inline-block;
+    float: none;
+  }
+}
+@media (max-width: 485px) {
+  .mobileVersion {
+    display: block;
+    position: absolute;
+    top: -9.5rem;
+    left: 20px;
+  }
+}
+
+.animate-roll {
+  animation: roll 7s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.profileSec {
+  position: absolute;
+  top: 90%;
+}

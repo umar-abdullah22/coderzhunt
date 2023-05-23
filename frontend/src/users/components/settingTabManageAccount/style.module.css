@@ -1,0 +1,44 @@
+.manageForm {
+  display: flex;
+}
+.manageForm .left_nav,
+.manageForm .right_nav {
+  float: left;
+  width: 48%;
+  margin: 20px 4% 20px 00px;
+  box-sizing: border-box;
+}
+.manageForm .left_nav label,
+.manageForm .right_nav label {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #ababab;
+}
+.manageForm .left_nav input,
+.manageForm .right_nav input[type='pwd'] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #cbcbcb;
+  height: 40px;
+  padding: 0px 0px 0px 0px;
+  font-size: 15px;
+  color: #272727;
+}
+.manageForm .left_nav .group_form {
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+}
+.group_form input[type='submit'] {
+  font-size: 16px;
+  border: none;
+  margin-top: 30px;
+  background-color: #df8390;
+  color: #fff;
+  padding: 12px 27px;
+  border-radius: 7px;
+}
+input:focus-visible {
+  outline: none;
+}

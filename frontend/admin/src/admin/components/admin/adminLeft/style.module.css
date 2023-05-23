@@ -1,0 +1,54 @@
+ul {
+  /* padding-left: 20px; */
+  margin: 0;
+}
+li {
+  list-style: none;
+  position: relative;
+  /* margin-bottom: 6px;
+    padding-bottom: 3px; */
+  line-height: 27px;
+}
+li a {
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  outline: none;
+}
+
+ul li > ul {
+  padding-left: 15px;
+  display: none;
+}
+ul li > ul li a {
+  font-size: 15px;
+}
+ul li > ul li > ul {
+  padding-left: 15px;
+  display: none;
+}
+ul li > ul li > ul li a {
+  font-size: 14px;
+}
+
+.mobileVersion img {
+  width: 28px;
+}
+.mobileHidden {
+  display: block;
+}
+.mobileVersion {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobileHidden {
+    display: none; /* Show the mobileVersion div on smaller screens */
+  }
+  .mobileVersion {
+    display: block;
+    position: fixed;
+    top: 28px;
+    left: 20px;
+    left: 20px;
+  }
+}

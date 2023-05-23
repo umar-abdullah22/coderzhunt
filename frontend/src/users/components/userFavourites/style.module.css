@@ -1,0 +1,22 @@
+.userFrav {
+  /* float: left;
+  width: 75%; */
+}
+.userFavrInner {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.userFavrInner img {
+  max-width: 100px;
+  width: 100%;
+}
+.userFavrInner p {
+  margin: 0;
+  font-size: 15px;
+  color: #999;
+}

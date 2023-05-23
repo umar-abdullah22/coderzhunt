@@ -1,0 +1,120 @@
+.analyticsContainerleftBody {
+  padding-left: 20px;
+  margin-top: 30px;
+}
+.clear {
+  clear: both;
+}
+.profileActive {
+  background-color: #c6edff;
+  padding: 20px 20px;
+  box-shadow: 0 10px 25px 0 rgb(50 50 93 / 7%), 0 5px 15px 0 rgb(0 0 0 / 7%);
+}
+.profileActiveUser img {
+  max-width: 50px;
+}
+.profileActiveUserDetails {
+  background-color: #fff;
+  box-shadow: 0 10px 25px 0 rgb(50 50 93 / 7%), 0 5px 15px 0 rgb(0 0 0 / 7%);
+  clear: both;
+}
+.profileActiveUserDetails ul {
+  margin: 0;
+  padding: 0.5rem 1.25rem;
+}
+.profileActiveUserDetails ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.profileActiveUserDetails ul li h3 {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+}
+.profileActiveUserDetails ul li h3 span {
+  font-weight: 500;
+  color: #777;
+  font-size: 18px;
+}
+.profileActiveUserDetails ul li svg {
+  float: left;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+.profileActiveUser {
+  background-color: #fff;
+  box-shadow: 0 10px 25px 0 rgb(50 50 93 / 7%), 0 5px 15px 0 rgb(0 0 0 / 7%);
+  margin: 20px 0px;
+  padding: 10px 20px;
+  overflow: hidden;
+  overflow-x: scroll;
+  clear: both;
+}
+.profileActiveLeft {
+  float: left;
+  width: 70%;
+}
+.profileActiveright {
+  float: left;
+  width: 30%;
+}
+.profileActiveright label {
+  background-color: #dc3545;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 2px 6px;
+  line-height: normal;
+  margin-top: 13px;
+  float: right;
+}
+.profileActiveLeft img {
+  max-width: 50px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 15px;
+}
+.profileActiveLeft .userActiveProfile {
+  float: left;
+  padding-top: 5px;
+}
+.profileActiveLeft .userActiveProfile h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+}
+.profileActiveLeft .userActiveProfile h3 span {
+  font-weight: 600;
+}
+.profileActiveLeft .userActiveProfile h5 {
+  margin: 0;
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+}
+.profileActiveUserAdd {
+  padding: 0.5rem 1.25rem;
+  margin: 20px 0px;
+  background-color: #fff;
+  box-shadow: 0 10px 25px 0 rgb(50 50 93 / 7%), 0 5px 15px 0 rgb(0 0 0 / 7%);
+  clear: both;
+}
+.formModratorGroup input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  height: 30px;
+  margin-bottom: 5px;
+}
+.formModratorGroup button {
+  background-color: #ff762b;
+  border: none;
+  color: #fff;
+  width: 100%;
+  margin-top: 15px;
+  padding: 13px 20px;
+}

@@ -1,0 +1,135 @@
+.userFrav {
+  float: left;
+  width: 100%;
+}
+
+.userFavrInner {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.userFavrInner img {
+  max-width: 100px;
+  width: 100%;
+}
+
+.userFavrInner p {
+  margin: 0;
+  font-size: 15px;
+  color: #999;
+}
+
+.ProfileVisitmain {
+  float: left;
+  width: 100%;
+}
+
+.ProfileVisitInner {
+  background-image: url(../../../assets/images/userP.jpg);
+  background-position: 50%;
+  background-size: cover;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 320px;
+  position: relative;
+  width: 31%;
+  float: left;
+  margin: 15px 1%;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.ProfileVisitInner {
+}
+
+.ProfileVisitInner p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.clear {
+  clear: both;
+}
+
+.ProfileVisitInner .ProfileLock {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  padding: 19px;
+}
+
+.ProfileVisitMessage {
+  text-align: center;
+}
+.ProfileVisitMessage img {
+  margin: auto;
+  display: block;
+  text-align: center;
+  width: 100px;
+}
+
+.unlockbtn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 40px;
+  position: relative;
+  background-color: #b945453a;
+  color: white;
+  border-radius: 5px;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.unlockbtn:hover {
+  background-color: #d116169c;
+}
+
+.unlockbtn:hover .line {
+  background-color: #111;
+}
+
+.popup {
+  background-color: #d3414194;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 786px) {
+  .ProfileVisitInner {
+    width: 46%;
+  }
+}
+@media (max-width: 485px) {
+  .ProfileVisitInner {
+    width: 98%;
+  }
+}

@@ -1,0 +1,24 @@
+.formGroup {
+    margin-bottom: 20px;
+}
+.formGroup label{
+    font-size: 14px;
+    color: #000;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.formGroup input[type="text"], .formGroup input[type="text"]:focus{
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    height: 40px;
+    padding: 15px 15px;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #ccc;
+}
+.formGroup button{
+    
+}
+
+

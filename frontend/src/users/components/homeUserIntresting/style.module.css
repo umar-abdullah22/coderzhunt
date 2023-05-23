@@ -1,0 +1,94 @@
+.homeUserNewMain {
+  position: relative;
+}
+.homeUserNewform {
+  margin-bottom: 30px;
+  clear: both;
+  display: inline-block;
+  width: 100%;
+}
+.homeUserNewInner {
+  position: relative;
+  width: 31%;
+  float: left;
+  margin: 15px 1%;
+}
+.homeUserNewOnline {
+  position: absolute;
+  left: 25px;
+  top: 15px;
+}
+.homeUserNewOnlineIcon {
+  background-color: #3ec243;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+}
+.userImage img {
+  max-width: 270px;
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 20px;
+  margin: auto;
+  display: block;
+}
+.homeUserNewVerified {
+  background-color: #4a96f3;
+  border-radius: 50px;
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  z-index: 2;
+}
+.homeUserNewVerified img {
+  padding: 10px 10px;
+}
+.homeUserNewDetails {
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
+}
+.homeUserNewDetails h3 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.homeUserNewDetails p {
+  color: #fff;
+  font-size: 13px;
+  margin-top: 0;
+}
+.row1 .rowa {
+  float: left;
+  width: 31%;
+  margin: 10px 1%;
+}
+.row1 .rowa .MuiInputBase-root.MuiOutlinedInput-root {
+  border-radius: 30px;
+}
+.clear {
+  clear: both;
+}
+.filterForm {
+  position: relative;
+  box-shadow: 0px 0px 10px #ddd;
+  padding: 20px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.filterForm input[type='submit'] {
+  position: absolute;
+  right: 40px;
+  background-color: #3f51b5;
+  border: none;
+  padding: 9px 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+}
