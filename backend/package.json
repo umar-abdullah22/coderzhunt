@@ -10,7 +10,7 @@
     "build": "nest build",
     "build:watch": "tsc --watch",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "npm-run-all --parallel nest:start:dev fb:serve",
+    "start":"node dist/src/main.js",
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
     "deploy": "firebase deploy --only functions",
