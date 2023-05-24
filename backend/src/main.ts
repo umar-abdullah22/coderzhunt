@@ -35,4 +35,4 @@ async function bootstrap() {
   await app.listen(SERVER_PORT);
   logger.log(`Server is running on: ${await app.getUrl()}`);
 }
-// bootstrap();
+bootstrap();
