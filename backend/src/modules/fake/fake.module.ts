@@ -10,7 +10,7 @@ import { FakeController } from './fake.controller';
 import { FakeService } from './fake.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from '../user/entities/user.entity';
-import { CloudinaryConfigService } from '@config/cloudinary.config';
+import { CloudinaryConfigService } from '../../config/cloudinary.config';
 import { Email } from '../mail/entities/email.entity';
 
 @Module({

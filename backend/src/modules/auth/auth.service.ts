@@ -50,7 +50,7 @@ import { UserTransactionActionTypes } from '../user/entities/user.transaction.ac
 import { Token } from './entities/token.entity';
 import { v4 as uuidv4 } from 'uuid';
 import { GoogleClient } from './clients/google.client';
-import { CloudinaryConfigService } from '@config/cloudinary.config';
+import { CloudinaryConfigService } from '../../config/cloudinary.config';
 import { Chat } from '../chat/entities/chat.entity';
 import { BonusCode } from './entities/bonusCode.entity';
 import { Attachment } from '../chat/entities/attachment.entity';

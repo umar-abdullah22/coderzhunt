@@ -12,7 +12,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { CustomerProfileData } from '../user/entities/customer.profiledata.entity';
 import { UserService } from '../user/user.service';
-import { CloudinaryConfigService } from '@config/cloudinary.config';
+import { CloudinaryConfigService } from '../../config/cloudinary.config';
 
 @Injectable()
 export class FakeService {

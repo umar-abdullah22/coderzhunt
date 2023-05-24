@@ -7,7 +7,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from '../user/entities/user.entity';
 import { UserService } from '../user/user.service';
 import { MailService } from '../mail/mail.service';
-import { CloudinaryConfigService } from '@config/cloudinary.config';
+import { CloudinaryConfigService } from '../../config/cloudinary.config';
 import { Email } from '../mail/entities/email.entity';
 @Module({
   imports: [TypeOrmModule.forFeature([User, Subscription, Email]), AuthModule],

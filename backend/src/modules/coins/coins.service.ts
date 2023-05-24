@@ -12,7 +12,7 @@ import { AuthHelper } from '../auth/auth.helper';
 import { UserRoleEnum } from '../../../libs/types/src';
 import * as fs from 'fs';
 import * as path from 'path';
-import { CloudinaryConfigService } from '@config/cloudinary.config';
+import { CloudinaryConfigService } from '../../config/cloudinary.config';
 import { clearConfigCache } from 'prettier';
 @Injectable()
 export class CoinsService {

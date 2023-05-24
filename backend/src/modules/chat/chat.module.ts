@@ -12,7 +12,7 @@ import { Attachment } from './entities/attachment.entity';
 import { Chat } from './entities/chat.entity';
 import { ChatsGateway } from './chat.gateway';
 import { FakeChat } from '../fake/entities/fakeChat.entity';
-import { CloudinaryConfigService } from '@config/cloudinary.config';
+import { CloudinaryConfigService } from '../../config/cloudinary.config';
 import { FallOutUsers } from '../user/entities/user.fallout.entity';
 import { Email } from '../mail/entities/email.entity';
 @Module({

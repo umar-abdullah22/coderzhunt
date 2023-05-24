@@ -14,7 +14,7 @@ import { Address } from './entities/user.address.entity';
 import { Block } from './entities/user.block.entity';
 import { Photo } from './entities/user.photos.entity';
 import { Payments } from '../payments/entities/payment.entity';
-import { CloudinaryConfigService } from '@config/cloudinary.config';
+import { CloudinaryConfigService } from '../../config/cloudinary.config';
 import { BonusCode } from '../auth/entities/bonusCode.entity';
 import { AuthService } from '../auth/auth.service';
 import { Email } from '../mail/entities/email.entity';

@@ -11,7 +11,7 @@ import { Payments } from './entities/payment.entity';
 import { Subscription } from '../subscriptions/entities/subscription.entity';
 import { UserAccountTransaction } from '../user/entities/user.account.transaction.entity';
 import { UserTransactionActionTypes } from '../user/entities/user.transaction.actiontypes.entity';
-import { CloudinaryConfigService } from '@config/cloudinary.config';
+import { CloudinaryConfigService } from '../../config/cloudinary.config';
 import { Email } from '../mail/entities/email.entity';
 
 @Module({

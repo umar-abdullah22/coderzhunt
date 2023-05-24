@@ -38,7 +38,7 @@ import { User } from './entities/user.entity';
 import { Photo } from './entities/user.photos.entity';
 import { UserTransactionActionTypes } from './entities/user.transaction.actiontypes.entity';
 import { VisitProfile } from './entities/visit.profile.entity';
-import { CloudinaryConfigService } from '@config/cloudinary.config';
+import { CloudinaryConfigService } from '../../config/cloudinary.config';
 import * as schedule from 'node-schedule';
 
 @Injectable()

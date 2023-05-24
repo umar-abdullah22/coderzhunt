@@ -7,7 +7,7 @@ import { UserService } from '../user/user.service';
 import { CoinsController } from './coins.controller';
 import { UserTransactionActionTypes } from '../user/entities/user.transaction.actiontypes.entity';
 import { MailService } from '../mail/mail.service';
-import { CloudinaryConfigService } from '@config/cloudinary.config';
+import { CloudinaryConfigService } from '../../config/cloudinary.config';
 import { Email } from '../mail/entities/email.entity';
 @Module({
   imports: [TypeOrmModule.forFeature([User, UserTransactionActionTypes, Email]), AuthModule],

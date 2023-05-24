@@ -28,7 +28,7 @@ import { Token } from './entities/token.entity';
 import { ChatService } from '../chat/chat.service';
 import { Chat } from '../chat/entities/chat.entity';
 import { Attachment } from '../chat/entities/attachment.entity';
-import { CloudinaryConfigService } from '@config/cloudinary.config';
+import { CloudinaryConfigService } from '../../config/cloudinary.config';
 import { ModService } from './mod.service';
 import { ModController } from './mod.controller';
 import { FallOutUsers } from '../user/entities/user.fallout.entity';

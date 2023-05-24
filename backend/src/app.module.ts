@@ -15,7 +15,7 @@ import mailConfig from './config/mailConfig';
 // Module imports
 import { AuthModule } from './modules/auth/auth.module';
 import { UserModule } from './modules/user/user.module';
-import jwtConfig from '@config/jwtConfig';
+import jwtConfig from 'src/config/jwtConfig';
 import { NotesModule } from './modules/notes/notes.module';
 import { SubscriptionsModule } from './modules/subscriptions/subscriptions.module';
 import { ChatModule } from './modules/chat/chat.module';
