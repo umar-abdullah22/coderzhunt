@@ -3,7 +3,7 @@ import { ApiBearerAuth, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { SWAGGER_API_TAG } from '../../../libs/constants/src';
 import { CreateBulkProfileVisitsDto } from '../../../libs/dtos/src';
 import { UserRole, UserRoleEnum } from '../../../libs/types/src';
-import { JwtAuthGuard, RolesGuard } from 'src/guards';
+import { JwtAuthGuard, RolesGuard } from '../../guards';
 import { ModService } from './mod.service';
 
 @Controller('mod')

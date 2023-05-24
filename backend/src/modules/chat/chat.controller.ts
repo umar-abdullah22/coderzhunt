@@ -6,7 +6,7 @@ import { Chat } from './entities/chat.entity';
 import { Get, Param, UploadedFile, UploadedFiles, UseGuards } from '@nestjs/common/decorators';
 import { FileFieldsInterceptor, FileInterceptor } from '@nestjs/platform-express';
 import { GetChatDto } from '../../../libs/dtos/src';
-import { JwtAuthGuard, RolesGuard } from 'src/guards';
+import { JwtAuthGuard, RolesGuard } from '../../guards';
 import { UserRole, UserRoleEnum } from '../../../libs/types/src';
 @Controller('chats')
 @ApiTags(SWAGGER_API_TAG.CHAT)

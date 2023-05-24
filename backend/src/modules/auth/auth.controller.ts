@@ -42,12 +42,11 @@ import {
   SpamMessagesDto,
 } from '../../../libs/dtos/src';
 import { UserRole, UserRoleEnum } from '../../../libs/types/src';
-import { JwtAuthGuard, RolesGuard } from 'src/guards';
+import { JwtAuthGuard, RolesGuard } from '../../guards';
 import { type GlobalResponseDto } from '../../../libs/dtos/src';
 import { UpdateAccessDto } from '../../../libs/dtos/src/auth/updateAccess';
 import { UpdateStatusDto } from '../../../libs/dtos/src/auth/updateStatus';
 import { ConfigService } from '@nestjs/config';
-import { CurrentUser } from 'src/decorators/currentUser.decorator';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { AuthHelper } from './auth.helper';
 

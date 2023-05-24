@@ -14,7 +14,7 @@ import {
 import { Notes } from './entities/notes.entity';
 import { ApiBearerAuth, ApiOperation, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { UserRole, UserRoleEnum } from '../../../libs/types/src';
-import { JwtAuthGuard, RolesGuard } from 'src/guards';
+import { JwtAuthGuard, RolesGuard } from '../../guards';
 import { SWAGGER_API_TAG } from '../../../libs/constants/src';
 import { CreateNotesRequestDto, UpdateNotesRequestDto } from '../../../libs/dtos/src';
 import { NotesService } from './notes.service';

@@ -1,15 +1,3 @@
-import { Chat } from 'src/modules/chat/entities/chat.entity';
-import {
-  UserSelfGenderEnum,
-  UserInterestedGenderEnum,
-  type IFake,
-  IFakeParams,
-  UserRoleEnum,
-  CustomerLifeStatus,
-  CustomerSmokeStatus,
-  CustomerRelationShipStatus,
-  CustomerChildrenEnum,
-} from './../../../../libs/types/src/db/entities/user';
 import {
   Entity,
   Column,

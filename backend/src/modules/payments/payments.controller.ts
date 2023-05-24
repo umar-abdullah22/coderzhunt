@@ -3,7 +3,7 @@ import { UserRole, UserRoleEnum } from '../../../libs/types/src';
 import { PaymentsService } from './payments.service';
 import { Controller, Get, Post, Body, Param, Query, Res, Headers, UseGuards, HttpStatus } from '@nestjs/common';
 import { Response } from 'express';
-import { JwtAuthGuard, RolesGuard } from 'src/guards';
+import { JwtAuthGuard, RolesGuard } from '../../guards';
 import { SWAGGER_API_TAG } from '../../../libs/constants/src';
 import { PaymentRequestBody } from './types/PaymentRequestBody';
 @UseGuards(JwtAuthGuard, RolesGuard)

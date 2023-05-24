@@ -14,7 +14,6 @@ import {
   UseInterceptors,
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { JwtAuthGuard, RolesGuard } from 'src/guards';
 import { SWAGGER_API_TAG } from '../../../libs/constants/src';
 import { CreateSubscriptionRequestDto, UpdateSubscriptionRequestDto } from '../../../libs/dtos/src';
 // @UseGuards(JwtAuthGuard, RolesGuard)

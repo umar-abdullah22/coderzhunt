@@ -13,15 +13,15 @@ import {
   UserStatusEnum,
 } from '../../../../libs/types/src';
 import { AuthorizeResponseDto, SocialLoginRequestDto } from '../../../../libs/dtos/src';
-import { User } from 'src/modules/user/entities/user.entity';
+import { User } from '../../user/entities/user.entity';
 import { EntityManager, Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 import { HttpException, HttpStatus } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
-import { MailService } from 'src/modules/mail/mail.service';
-import { CustomerProfileData } from 'src/modules/user/entities/customer.profiledata.entity';
-import { UserAccountTransaction } from 'src/modules/user/entities/user.account.transaction.entity';
-import { UserTransactionActionTypes } from 'src/modules/user/entities/user.transaction.actiontypes.entity';
+import { MailService } from '../../mail/mail.service';
+import { CustomerProfileData } from '../../user/entities/customer.profiledata.entity';
+import { UserAccountTransaction } from '../../user/entities/user.account.transaction.entity';
+import { UserTransactionActionTypes } from '../../user/entities/user.transaction.actiontypes.entity';
 
 @Injectable()
 export class GoogleClient {

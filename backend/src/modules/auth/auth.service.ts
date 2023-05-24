@@ -1,9 +1,9 @@
-import { Payments } from 'src/modules/payments/entities/payment.entity';
+import { Payments } from '../payments/entities/payment.entity';
 import { Email } from './../mail/entities/email.entity';
 import { CreateBonusCodeDto } from './../../../libs/dtos/src/auth/bonusCode.dto';
 import { UpdateModDto } from './../../../libs/dtos/src/auth/updateMod.dto';
 import { CreateModDto } from './../../../libs/dtos/src/auth/createMod.dto';
-import { FakeChat } from 'src/modules/fake/entities/fakeChat.entity';
+import { FakeChat } from '../fake/entities/fakeChat.entity';
 import { GetModsStatsQueryParamsDto } from './../../../libs/dtos/src/auth/mod.stats.dto';
 import { ChatService } from './../chat/chat.service';
 import { UserAccountTransaction } from './../user/entities/user.account.transaction.entity';

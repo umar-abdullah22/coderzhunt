@@ -9,7 +9,7 @@ import {
   OneToOne,
 } from 'typeorm';
 import { Attachment } from './attachment.entity';
-import { FakeChat } from 'src/modules/fake/entities/fakeChat.entity';
+import { FakeChat } from '../../fake/entities/fakeChat.entity';
 @Entity({ name: 'chat' })
 export class Chat {
   constructor(params?: IChatParams) {

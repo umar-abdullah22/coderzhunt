@@ -25,7 +25,7 @@ import { FileFieldsInterceptor } from '@nestjs/platform-express';
 import { ApiBearerAuth, ApiParam, ApiQuery, ApiTags } from '@nestjs/swagger';
 import { BlockUserReason, UserRoleEnum } from './../../../libs/types/src/db/entities/user';
 import { UserService } from './user.service';
-import { JwtAuthGuard, RolesGuard } from 'src/guards';
+import { JwtAuthGuard, RolesGuard } from '../../guards';
 import { UserRole } from '../../../libs/types/src';
 
 @UseGuards(JwtAuthGuard, RolesGuard)

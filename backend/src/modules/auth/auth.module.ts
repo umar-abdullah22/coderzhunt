@@ -1,4 +1,4 @@
-import { Payments } from 'src/modules/payments/entities/payment.entity';
+import { Payments } from '../payments/entities/payment.entity';
 import { Email } from './../mail/entities/email.entity';
 import { FakeChat } from 'src/modules/fake/entities/fakeChat.entity';
 import { GoogleClient } from './clients/google.client';

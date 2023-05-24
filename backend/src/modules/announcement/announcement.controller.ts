@@ -14,7 +14,7 @@ import {
 import { Announcement } from './entities/announcement.entity';
 import { ApiBearerAuth, ApiOperation, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { UserRole, UserRoleEnum } from '../../../libs/types/src';
-import { JwtAuthGuard, RolesGuard } from 'src/guards';
+import { JwtAuthGuard, RolesGuard } from '../../guards';
 import { SWAGGER_API_TAG } from '../../../libs/constants/src';
 import { AnnouncementService } from './announcement.service';
 import { CreateAnnouncementRequestDto, UpdateAnnouncementRequestDto } from '../../../libs/dtos/src';

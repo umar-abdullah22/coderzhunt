@@ -15,7 +15,7 @@ import {
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { UserRole, UserRoleEnum } from '../../../libs/types/src';
-import { JwtAuthGuard, RolesGuard } from 'src/guards';
+import { JwtAuthGuard, RolesGuard } from '../../guards';
 import { SWAGGER_API_TAG } from '../../../libs/constants/src';
 import { CreateFakeRequestDto, UpdateFakeRequestDto } from '../../../libs/dtos/src';
 import { FileInterceptor } from '@nestjs/platform-express';

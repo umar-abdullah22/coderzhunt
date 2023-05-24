@@ -18,12 +18,12 @@ import { EntityManager, Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 import { HttpException, HttpStatus } from '@nestjs/common';
 import axios from 'axios';
-import { CustomerProfileData } from 'src/modules/user/entities/customer.profiledata.entity';
-import { UserAccountTransaction } from 'src/modules/user/entities/user.account.transaction.entity';
-import { UserTransactionActionTypes } from 'src/modules/user/entities/user.transaction.actiontypes.entity';
-import { UserService } from 'src/modules/user/user.service';
+import { CustomerProfileData } from '../../user/entities/customer.profiledata.entity';
+import { UserAccountTransaction } from '../../user/entities/user.account.transaction.entity';
+import { UserTransactionActionTypes } from '../../user/entities/user.transaction.actiontypes.entity';
+import { UserService } from '../../user/user.service';
 import { JwtService } from '@nestjs/jwt';
-import { MailService } from 'src/modules/mail/mail.service';
+import { MailService } from '../../mail/mail.service';
 
 @Injectable()
 export class FacebookClient {
