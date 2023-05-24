@@ -1,6 +1,6 @@
-import { SubscriptionsService } from 'src/modules/subscriptions/subscriptions.service';
-import { User } from 'src/modules/user/entities/user.entity';
-import { UserTransactionActionTypes } from 'src/modules/user/entities/user.transaction.actiontypes.entity';
+import { SubscriptionsService } from '../../../../../src/modules/subscriptions/subscriptions.service';
+import { User } from '../../../../../src/modules/user/entities/user.entity';
+import { UserTransactionActionTypes } from '../../../../../src/modules/user/entities/user.transaction.actiontypes.entity';
 
 export interface ISubscription {
   id?: string;

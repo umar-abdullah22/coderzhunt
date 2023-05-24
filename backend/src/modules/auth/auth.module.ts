@@ -1,6 +1,6 @@
 import { Payments } from '../payments/entities/payment.entity';
 import { Email } from './../mail/entities/email.entity';
-import { FakeChat } from 'src/modules/fake/entities/fakeChat.entity';
+import { FakeChat } from '../fake/entities/fakeChat.entity';
 import { GoogleClient } from './clients/google.client';
 import { FacebookClient } from './clients/facebook.client';
 import { ChatsGateway } from './../chat/chat.gateway';

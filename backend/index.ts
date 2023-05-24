@@ -5,7 +5,7 @@ import * as functions from 'firebase-functions';
 import { AppModule } from './src/app.module';
 import * as dotenv from 'dotenv'; // Import dotenv package
 import { Logger, ValidationPipe } from '@nestjs/common';
-import { UserService } from 'src/modules/user/user.service';
+import { UserService } from './src/modules/user/user.service';
 import { ConfigService } from '@nestjs/config';
 import { ConfigEnum, IServerConfig, ISwaggerConfig } from '../backend/libs/types/src';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
