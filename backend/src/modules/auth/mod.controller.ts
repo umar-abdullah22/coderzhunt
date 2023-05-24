@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Body, UseGuards, Headers } from '@nestjs/common';
 import { ApiBearerAuth, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { SWAGGER_API_TAG } from '@lib/constants';
-import { CreateBulkProfileVisitsDto } from '@lib/dtos';
-import { UserRole, UserRoleEnum } from '@lib/types';
+import { SWAGGER_API_TAG } from '../../../libs/constants/src';
+import { CreateBulkProfileVisitsDto } from '../../../libs/dtos/src';
+import { UserRole, UserRoleEnum } from '../../../libs/types/src';
 import { JwtAuthGuard, RolesGuard } from 'src/guards';
 import { ModService } from './mod.service';
 

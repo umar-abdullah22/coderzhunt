@@ -1,7 +1,5 @@
 import { Entity, Column, CreateDateColumn, UpdateDateColumn, PrimaryColumn, Generated } from 'typeorm';
-import { IToken, ITokenParams } from '@lib/types';
-import { Uuid } from '@lib/utils';
-
+import { IToken, ITokenParams } from '../../../../libs/types/src';
 @Entity({ name: 'token' })
 export class Token implements IToken {
   constructor(params?: ITokenParams) {

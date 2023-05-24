@@ -1,4 +1,4 @@
-import { ConfigEnum, type IJwtConfig } from '@lib/types';
+import { ConfigEnum, type IJwtConfig } from '../../libs/types/src';
 import { registerAs } from '@nestjs/config';
 
 export default registerAs(

@@ -7,3 +7,4 @@ export * from './fake';
 export * from './chat';
 export * from './coins';
 export * from './mod';
+export * from './common';

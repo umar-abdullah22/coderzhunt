@@ -11,8 +11,8 @@ import {
   UserRoleEnum,
   UserSelfGenderEnum,
   UserStatusEnum,
-} from '@lib/types';
-import { AuthorizeResponseDto, SocialLoginRequestDto } from '@lib/dtos';
+} from '../../../../libs/types/src';
+import { AuthorizeResponseDto, SocialLoginRequestDto } from '../../../../libs/dtos/src';
 import { User } from 'src/modules/user/entities/user.entity';
 import { EntityManager, Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';

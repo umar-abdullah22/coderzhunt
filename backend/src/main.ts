@@ -1,4 +1,4 @@
-import { ConfigEnum, type IServerConfig, type ISwaggerConfig } from '@lib/types';
+import { ConfigEnum, type IServerConfig, type ISwaggerConfig } from '../libs/types/src';
 import { Logger, ValidationPipe } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';

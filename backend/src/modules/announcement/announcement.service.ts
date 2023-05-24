@@ -1,4 +1,4 @@
-import { UserRoleEnum } from '@lib/types';
+import { UserRoleEnum } from '../../../libs/types/src';
 import { type CreateAnnouncementRequestDto } from '../../../libs/dtos/src/announcement/create';
 
 import { BadRequestException, HttpException, HttpStatus, Inject, Injectable, forwardRef } from '@nestjs/common';
@@ -7,7 +7,7 @@ import { EntityManager, Repository } from 'typeorm';
 import { AuthHelper } from '../auth/auth.helper';
 import { User } from '../user/entities/user.entity';
 import { Announcement } from './entities/announcement.entity';
-import { type UpdateAnnouncementRequestDto } from '@lib/dtos';
+import { type UpdateAnnouncementRequestDto } from '../../../libs/dtos/src';
 @Injectable()
 export class AnnouncementService {
   constructor(

@@ -1,4 +1,4 @@
-import { ConfigEnum, type IMailConfig } from '@lib/types';
+import { ConfigEnum, type IMailConfig } from '../../libs/types/src';
 import { registerAs } from '@nestjs/config';
 
 export default registerAs(

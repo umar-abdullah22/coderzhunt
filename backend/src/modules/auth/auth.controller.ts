@@ -25,7 +25,7 @@ import {
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiParam, ApiQuery, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { Response } from 'express';
-import { SWAGGER_API_TAG } from '@lib/constants';
+import { SWAGGER_API_TAG } from '../../../libs/constants/src';
 import { AuthService } from './auth.service';
 import { User } from '../user/entities/user.entity';
 import {
@@ -40,12 +40,12 @@ import {
   GetUsersQueryParamsDto,
   ScheduleMessageDto,
   SpamMessagesDto,
-} from '@lib/dtos';
-import { UserRole, UserRoleEnum } from '@lib/types';
+} from '../../../libs/dtos/src';
+import { UserRole, UserRoleEnum } from '../../../libs/types/src';
 import { JwtAuthGuard, RolesGuard } from 'src/guards';
-import { type GlobalResponseDto } from '@lib/dtos/common';
-import { UpdateAccessDto } from '@lib/dtos/auth/updateAccess';
-import { UpdateStatusDto } from '@lib/dtos/auth/updateStatus';
+import { type GlobalResponseDto } from '../../../libs/dtos/src';
+import { UpdateAccessDto } from '../../../libs/dtos/src/auth/updateAccess';
+import { UpdateStatusDto } from '../../../libs/dtos/src/auth/updateStatus';
 import { ConfigService } from '@nestjs/config';
 import { CurrentUser } from 'src/decorators/currentUser.decorator';
 import { FileInterceptor } from '@nestjs/platform-express';

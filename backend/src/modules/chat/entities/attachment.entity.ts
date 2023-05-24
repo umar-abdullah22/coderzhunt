@@ -1,4 +1,4 @@
-import { IAttachmentParams } from '@lib/types';
+import { IAttachmentParams } from '../../../../libs/types/src';
 import { Entity, Column, CreateDateColumn, UpdateDateColumn, PrimaryGeneratedColumn, ManyToOne } from 'typeorm';
 import { Chat } from './chat.entity';
 @Entity({ name: 'attachment' })

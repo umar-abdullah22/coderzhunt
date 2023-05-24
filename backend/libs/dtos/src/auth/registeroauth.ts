@@ -1,5 +1,5 @@
 import { UserInterestedGenderEnum, UserSelfGenderEnum } from './../../../types/src/db/entities/user';
-import { type IOathUser, type UserRoleEnum } from '@lib/types';
+import { type IOathUser, type UserRoleEnum } from '../../../types/src';
 import { ApiProperty } from '@nestjs/swagger';
 
 import { Trim } from 'class-sanitizer';

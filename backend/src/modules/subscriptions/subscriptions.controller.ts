@@ -14,10 +14,9 @@ import {
   UseInterceptors,
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { UserRole, UserRoleEnum, getPackageFromNumber } from '@lib/types';
 import { JwtAuthGuard, RolesGuard } from 'src/guards';
-import { SWAGGER_API_TAG } from '@lib/constants';
-import { CreateSubscriptionRequestDto, UpdateSubscriptionRequestDto } from '@lib/dtos/subscriptions';
+import { SWAGGER_API_TAG } from '../../../libs/constants/src';
+import { CreateSubscriptionRequestDto, UpdateSubscriptionRequestDto } from '../../../libs/dtos/src';
 // @UseGuards(JwtAuthGuard, RolesGuard)
 // @UserRole(UserRoleEnum.ADMIN)
 @ApiBearerAuth()

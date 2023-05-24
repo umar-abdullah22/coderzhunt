@@ -1,4 +1,4 @@
-import { USER_ROLE_KEY, type UserRoleEnum } from '@lib/types';
+import { USER_ROLE_KEY, type UserRoleEnum } from '../../libs/types/src';
 import { Injectable, type CanActivate, type ExecutionContext } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
 

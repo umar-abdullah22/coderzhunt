@@ -1,4 +1,4 @@
-import { ConfigEnum, type IServerConfig } from '@lib/types';
+import { ConfigEnum, type IServerConfig } from '../../libs/types/src';
 import { registerAs } from '@nestjs/config';
 
 export default registerAs(

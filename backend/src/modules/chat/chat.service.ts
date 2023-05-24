@@ -9,8 +9,14 @@ import { AuthHelper } from '../auth/auth.helper';
 import { User } from '../user/entities/user.entity';
 import { Chat } from './entities/chat.entity';
 import { Attachment } from './entities/attachment.entity';
-import { IMessage } from '@lib/dtos';
-import { ConfigEnum, IServerConfig, TransactionActionTypes, UserRoleEnum, UserStatusEnum } from '@lib/types';
+import { IMessage } from '../../../libs/dtos/src';
+import {
+  ConfigEnum,
+  IServerConfig,
+  TransactionActionTypes,
+  UserRoleEnum,
+  UserStatusEnum,
+} from '../../../libs/types/src';
 import { FakeChat } from '../fake/entities/fakeChat.entity';
 import { FakeService } from '../fake/fake.service';
 import { MailService } from '../mail/mail.service';

@@ -7,7 +7,7 @@ import { Announcement } from './entities/announcement.entity';
 import { AnnouncementService } from './announcement.service';
 import { AnnouncementController } from './announcement.controller';
 import { MailService } from '../mail/mail.service';
-import { CloudinaryConfigService } from '@config/cloudinary.config';
+import { CloudinaryConfigService } from '../../config/cloudinary.config';
 import { Email } from '../mail/entities/email.entity';
 @Module({
   imports: [TypeOrmModule.forFeature([User, Announcement, Email]), AuthModule],

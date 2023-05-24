@@ -1,13 +1,13 @@
 import { ChatService } from './chat.service';
 import { Body, ClassSerializerInterceptor, Controller, Post, UseInterceptors, Headers, Query } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiParam, ApiQuery, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { SWAGGER_API_TAG } from '@lib/constants';
+import { SWAGGER_API_TAG } from '../../../libs/constants/src';
 import { Chat } from './entities/chat.entity';
 import { Get, Param, UploadedFile, UploadedFiles, UseGuards } from '@nestjs/common/decorators';
 import { FileFieldsInterceptor, FileInterceptor } from '@nestjs/platform-express';
-import { GetChatDto } from '@lib/dtos';
+import { GetChatDto } from '../../../libs/dtos/src';
 import { JwtAuthGuard, RolesGuard } from 'src/guards';
-import { UserRole, UserRoleEnum } from '@lib/types';
+import { UserRole, UserRoleEnum } from '../../../libs/types/src';
 @Controller('chats')
 @ApiTags(SWAGGER_API_TAG.CHAT)
 export class ChatController {

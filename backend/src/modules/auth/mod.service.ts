@@ -6,7 +6,7 @@ import { User } from '../user/entities/user.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { AuthHelper } from './auth.helper';
-import { UserRoleEnum } from '@lib/types';
+import { UserRoleEnum } from '../../../libs/types/src';
 import { Chat } from '../chat/entities/chat.entity';
 import { VisitProfile } from '../user/entities/visit.profile.entity';
 import { ChatsGateway } from '../chat/chat.gateway';

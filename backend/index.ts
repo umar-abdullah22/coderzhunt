@@ -7,7 +7,7 @@ import * as dotenv from 'dotenv'; // Import dotenv package
 import { Logger, ValidationPipe } from '@nestjs/common';
 import { UserService } from 'src/modules/user/user.service';
 import { ConfigService } from '@nestjs/config';
-import { ConfigEnum, IServerConfig, ISwaggerConfig } from '@lib/types';
+import { ConfigEnum, IServerConfig, ISwaggerConfig } from '../backend/libs/types/src';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 dotenv.config(); // Load environment variables from .env file
 

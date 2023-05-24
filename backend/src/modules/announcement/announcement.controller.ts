@@ -13,11 +13,11 @@ import {
 } from '@nestjs/common';
 import { Announcement } from './entities/announcement.entity';
 import { ApiBearerAuth, ApiOperation, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { UserRole, UserRoleEnum } from '@lib/types';
+import { UserRole, UserRoleEnum } from '../../../libs/types/src';
 import { JwtAuthGuard, RolesGuard } from 'src/guards';
-import { SWAGGER_API_TAG } from '@lib/constants';
+import { SWAGGER_API_TAG } from '../../../libs/constants/src';
 import { AnnouncementService } from './announcement.service';
-import { CreateAnnouncementRequestDto, UpdateAnnouncementRequestDto } from '@lib/dtos';
+import { CreateAnnouncementRequestDto, UpdateAnnouncementRequestDto } from '../../../libs/dtos/src';
 @UseGuards(JwtAuthGuard, RolesGuard)
 @UserRole(UserRoleEnum.ADMIN)
 @ApiBearerAuth()

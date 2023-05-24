@@ -19,13 +19,6 @@ import {
     JoinColumn,
     OneToMany,
   } from 'typeorm';
-  // import {
-  //   IUserParams,
-  //   IUser,
-  //   UserStatusEnum,
-  //   UserRoleEnum,
-  //   SocialProviderEnum,
-  // } from "@lib/types";
   import { CustomerProfileData } from './customer.profiledata.entity';
   import { profile } from 'console';
   import { UserAccountTransaction } from './user.account.transaction.entity';

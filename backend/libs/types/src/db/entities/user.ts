@@ -1,5 +1,3 @@
-import { Uuid } from '@lib/utils';
-
 export enum UserStatusEnum {
   UNVERIFIED = 'UNVERIFIED',
   ACTIVE = 'ACTIVE',

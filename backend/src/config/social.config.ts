@@ -1,4 +1,4 @@
-import { ConfigEnum, ISocialConfig } from '@lib/types';
+import { ConfigEnum, ISocialConfig } from '../../libs/types/src';
 import { registerAs } from '@nestjs/config';
 
 export default registerAs(

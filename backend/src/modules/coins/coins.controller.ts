@@ -13,10 +13,10 @@ import {
   UploadedFile,
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { UserRole, UserRoleEnum } from '@lib/types';
+import { UserRole, UserRoleEnum } from '../../../libs/types/src';
 import { JwtAuthGuard, RolesGuard } from 'src/guards';
-import { SWAGGER_API_TAG } from '@lib/constants';
-import { CreateActionTypeDto, CreateGiftDto, SetCostDto, UpdateGiftDto } from '@lib/dtos';
+import { SWAGGER_API_TAG } from '../../../libs/constants/src';
+import { CreateActionTypeDto, CreateGiftDto, SetCostDto, UpdateGiftDto } from '../../../libs/dtos/src';
 import { CoinsService } from './coins.service';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { clearConfigCache } from 'prettier';

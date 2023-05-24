@@ -1,4 +1,4 @@
-import { UserStatusEnum, CustomerProfileEnum } from '@lib/types';
+import { UserStatusEnum, CustomerProfileEnum } from '../../../types/src';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsOptional, IsString, IsBoolean, IsEnum, IsDate } from 'class-validator';
 export class UpdateGeneralInfoRequestDto {

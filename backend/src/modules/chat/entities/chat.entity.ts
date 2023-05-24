@@ -1,4 +1,4 @@
-import { IChatParams } from '@lib/types';
+import { IChatParams } from '../../../../libs/types/src';
 import {
   Entity,
   Column,

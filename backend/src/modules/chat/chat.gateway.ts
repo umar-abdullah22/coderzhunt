@@ -17,10 +17,10 @@ import { Chat } from './entities/chat.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { AuthHelper } from '../auth/auth.helper';
-import { IMessage, IUnseen } from '@lib/dtos';
+import { IMessage, IUnseen } from '../../../libs/dtos/src';
 import * as schedule from 'node-schedule';
 import { VisitProfile } from '../user/entities/visit.profile.entity';
-import { UserRoleEnum, UserStatusEnum } from '@lib/types';
+import { UserRoleEnum, UserStatusEnum } from '../../../libs/types/src';
 import { User } from '../user/entities/user.entity';
 import { clearConfigCache } from 'prettier';
 @WebSocketGateway({

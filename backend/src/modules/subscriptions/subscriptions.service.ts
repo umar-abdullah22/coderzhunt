@@ -3,9 +3,9 @@ import { HttpException, HttpStatus, Inject, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { AuthHelper } from '../auth/auth.helper';
 import { User } from '../user/entities/user.entity';
-import { type CreateSubscriptionRequestDto, type UpdateSubscriptionRequestDto } from '@lib/dtos/subscriptions';
+import { type CreateSubscriptionRequestDto, type UpdateSubscriptionRequestDto } from '../../../libs/dtos/src';
 import { Repository } from 'typeorm';
-import { type Package, UserRoleEnum, getPackageFromNumber } from '@lib/types';
+import { type Package, UserRoleEnum, getPackageFromNumber } from '../../../libs/types/src';
 @Injectable()
 export class SubscriptionsService {
   constructor(

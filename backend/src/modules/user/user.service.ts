@@ -1,6 +1,6 @@
 import { AuthService } from './../auth/auth.service';
-import { ContactSupportDto, GetUsersQueryParamsDto } from '@lib/dtos';
-import { type UpdateProfileRequestDto } from '@lib/dtos/profile';
+import { ContactSupportDto, GetUsersQueryParamsDto } from '../../../libs/dtos/src';
+import { type UpdateProfileRequestDto } from '../../../libs/dtos/src/profile';
 import {
   BlockUserReason,
   ConfigEnum,
@@ -16,7 +16,7 @@ import {
   type IServerConfig,
   type IUserParams,
   type ServerConfigEnum,
-} from '@lib/types';
+} from '../../../libs/types/src';
 import { HttpException, HttpStatus, Inject, Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -28,7 +28,7 @@ import * as path from 'path';
 import { EntityManager, Repository } from 'typeorm';
 import { AuthHelper } from '../auth/auth.helper';
 import { MailService } from '../mail/mail.service';
-import { GlobalResponseDto } from './../../../libs/dtos/src/common/index';
+import { GlobalResponseDto } from '../../../libs/dtos/src/common';
 import { Favorite } from './entities/customer.favourite.entity';
 import { CustomerProfileData } from './entities/customer.profiledata.entity';
 import { UserAccountTransaction } from './entities/user.account.transaction.entity';

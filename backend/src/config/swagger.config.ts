@@ -1,7 +1,7 @@
 /* eslint-disable quotes */
 import { version } from 'package.json';
 import { registerAs } from '@nestjs/config';
-import { ConfigEnum } from '@lib/types';
+import { ConfigEnum } from '../../libs/types/src';
 
 export default registerAs(ConfigEnum.SWAGGER, () => ({
   title: process.env.SWAGGER_TITLE || 'Zizle',

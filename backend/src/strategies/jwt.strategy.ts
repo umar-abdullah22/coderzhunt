@@ -4,7 +4,7 @@ import { PassportStrategy } from '@nestjs/passport';
 import { ExtractJwt, Strategy } from 'passport-jwt';
 import { type User } from '../modules/user/entities/user.entity';
 import { AuthHelper } from '../modules/auth/auth.helper';
-import { ConfigEnum, type IJwtConfig } from '@lib/types';
+import { ConfigEnum, type IJwtConfig } from '../../libs/types/src';
 
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {

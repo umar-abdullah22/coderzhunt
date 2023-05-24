@@ -1,30 +1,30 @@
-import { type UserStatusEnum, type IUser, type UserRoleEnum } from '@lib/types'
+import { type UserStatusEnum, type IUser, type UserRoleEnum } from '../../../../libs/types/src';
 
 export class UserDto {
-  id: string
+  id: string;
 
-  userName: string
+  userName: string;
 
-  firstName: string
+  firstName: string;
 
-  lastName: string
+  lastName: string;
 
-  email: string
+  email: string;
 
-  status?: UserStatusEnum
-  role?: UserRoleEnum
+  status?: UserStatusEnum;
+  role?: UserRoleEnum;
 
-  createdAt?: Date
-  updatedAt?: Date
+  createdAt?: Date;
+  updatedAt?: Date;
 
-  constructor (user: IUser) {
-    this.id = user.id
-    this.firstName = user.firstName
-    this.lastName = user.lastName
-    this.email = user.email
-    if (user.status) this.status = user.status
-    if (user.role) this.role = user.role
-    this.createdAt = user.createdAt
-    this.updatedAt = user.updatedAt
+  constructor(user: IUser) {
+    this.id = user.id;
+    this.firstName = user.firstName;
+    this.lastName = user.lastName;
+    this.email = user.email;
+    if (user.status) this.status = user.status;
+    if (user.role) this.role = user.role;
+    this.createdAt = user.createdAt;
+    this.updatedAt = user.updatedAt;
   }
 }

@@ -1,4 +1,4 @@
-import { IAnnouncementParams } from '@lib/types';
+import { IAnnouncementParams } from '../../../../libs/types/src';
 import { Entity, Column, CreateDateColumn, UpdateDateColumn, PrimaryGeneratedColumn } from 'typeorm';
 @Entity({ name: 'announcement' })
 export class Announcement {

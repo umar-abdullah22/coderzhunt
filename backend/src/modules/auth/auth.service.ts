@@ -21,7 +21,7 @@ import {
   SocialLoginRequestDto,
   ScheduleMessageDto,
   SpamMessagesDto,
-} from '@lib/dtos';
+} from '../../../libs/dtos/src';
 import { FacebookClient } from './clients/facebook.client';
 
 import { HttpException, HttpStatus, Inject, Injectable } from '@nestjs/common';
@@ -38,12 +38,12 @@ import {
   UserStatusEnum,
   TransactionActionTypes,
   SocialProviderEnum,
-} from '@lib/types';
-import { type UpdateAccessDto } from '@lib/dtos/auth/updateAccess';
-import { GlobalResponseDto } from '@lib/dtos/common';
+} from '../../../libs/types/src';
+import { type UpdateAccessDto } from '../../../libs/dtos/src/auth/updateAccess';
+import { GlobalResponseDto } from '../../../libs/dtos/src';
 import { MailService } from '../mail/mail.service';
 import { ConfigService } from '@nestjs/config';
-import { type UpdateStatusDto } from '@lib/dtos/auth/updateStatus';
+import { type UpdateStatusDto } from '../../../libs/dtos/src/auth/updateStatus';
 import { JwtService } from '@nestjs/jwt';
 import { UserService } from '../user/user.service';
 import { UserTransactionActionTypes } from '../user/entities/user.transaction.actiontypes.entity';

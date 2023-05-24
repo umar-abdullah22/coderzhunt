@@ -1,6 +1,11 @@
-import { SWAGGER_API_TAG } from '@lib/constants';
-import { ContactSupportDto, OauthRequestDto, GetUsersQueryParamsDto, TransactionActionTypesDto } from '@lib/dtos';
-import { UpdateProfileRequestDto } from '@lib/dtos/profile';
+import { SWAGGER_API_TAG } from '../../../libs/constants/src';
+import {
+  ContactSupportDto,
+  OauthRequestDto,
+  GetUsersQueryParamsDto,
+  TransactionActionTypesDto,
+} from '../../../libs/dtos/src';
+import { UpdateProfileRequestDto } from '../../../libs/dtos/src/profile';
 import {
   Body,
   ClassSerializerInterceptor,
@@ -21,7 +26,7 @@ import { ApiBearerAuth, ApiParam, ApiQuery, ApiTags } from '@nestjs/swagger';
 import { BlockUserReason, UserRoleEnum } from './../../../libs/types/src/db/entities/user';
 import { UserService } from './user.service';
 import { JwtAuthGuard, RolesGuard } from 'src/guards';
-import { UserRole } from '@lib/types';
+import { UserRole } from '../../../libs/types/src';
 
 @UseGuards(JwtAuthGuard, RolesGuard)
 @UserRole(UserRoleEnum.CUSTOMER)

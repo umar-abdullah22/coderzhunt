@@ -1,10 +1,9 @@
-import { INotesParams } from '@lib/types';
+import { INotesParams } from '../../../../libs/types/src';
 import { Entity, Column, CreateDateColumn, UpdateDateColumn, PrimaryGeneratedColumn } from 'typeorm';
 @Entity({ name: 'notes' })
 export class Notes {
   constructor(params?: INotesParams) {
     if (params != null) {
-      
       this.note = params.note;
       this.creator = params.creator;
       this.userId = params.userId;
@@ -18,9 +17,9 @@ export class Notes {
     nullable: true,
   })
   @CreateDateColumn()
-  readonly createdAt: Date
+  readonly createdAt: Date;
 
-  @Column({ type:'text', nullable: false })
+  @Column({ type: 'text', nullable: false })
   note: string;
 
   @Column({ length: 36, nullable: true })
@@ -32,7 +31,6 @@ export class Notes {
   @Column({ nullable: true })
   @UpdateDateColumn()
   readonly updatedAt: Date;
-
 
   setNotes(notes: string) {
     this.note = notes;

@@ -1,15 +1,15 @@
 import { TransactionActionTypes } from './../../../libs/types/src/db/entities/subscriptions';
-import { GlobalResponseDto } from './../../../libs/dtos/src/common/index';
+import { GlobalResponseDto } from '../../../libs/dtos/src/common';
 import { CreateAnnouncementRequestDto } from '../../../libs/dtos/src/announcement/create';
 
 import { BadRequestException, HttpException, HttpStatus, Inject, Injectable, forwardRef } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { EntityManager, Repository } from 'typeorm';
 import { User } from '../user/entities/user.entity';
-import { CreateActionTypeDto, CreateGiftDto, SetCostDto, UpdateGiftDto } from '@lib/dtos';
+import { CreateActionTypeDto, CreateGiftDto, SetCostDto, UpdateGiftDto } from '../../../libs/dtos/src';
 import { UserTransactionActionTypes } from '../user/entities/user.transaction.actiontypes.entity';
 import { AuthHelper } from '../auth/auth.helper';
-import { UserRoleEnum } from '@lib/types';
+import { UserRoleEnum } from '../../../libs/types/src';
 import * as fs from 'fs';
 import * as path from 'path';
 import { CloudinaryConfigService } from '@config/cloudinary.config';

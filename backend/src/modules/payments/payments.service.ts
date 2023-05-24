@@ -7,7 +7,7 @@ import { Subscription } from '../subscriptions/entities/subscription.entity';
 import { Payments } from './entities/payment.entity';
 import { Response } from 'express';
 import { UserService } from '../user/user.service';
-import { IUserAccountTransaction, TransactionActionTypes, getAmountForEachAction } from '@lib/types';
+import { IUserAccountTransaction, TransactionActionTypes, getAmountForEachAction } from '../../../libs/types/src';
 import { UserAccountTransaction } from '../user/entities/user.account.transaction.entity';
 import { UserTransactionActionTypes } from '../user/entities/user.transaction.actiontypes.entity';
 import { SubscriptionsService } from '../subscriptions/subscriptions.service';

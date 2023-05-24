@@ -2,10 +2,10 @@ import { IWelcomeTemplate } from './../../../libs/types/src/email/welcomeTemplat
 import { IFakeMessageTemplate } from './../../../libs/types/src/email/fakeMessage';
 import { MailerService } from '@nestjs-modules/mailer';
 import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
-import { type IAccountVerificationTemplate } from '@lib/types/email/verificationTemplate';
-import { type IResetPasswordTemplate } from '@lib/types/email/resetPasswordTemplate';
-import { type IContactTemplate } from '@lib/types/email/contactTemplate';
-import { ContactSupportDto } from '@lib/dtos';
+import { type IAccountVerificationTemplate } from '../../../libs/types/src/email/verificationTemplate';
+import { type IResetPasswordTemplate } from '../../../libs/types/src/email/resetPasswordTemplate';
+import { type IContactTemplate } from '../../../libs/types/src/email/contactTemplate';
+import { ContactSupportDto } from '../../../libs/dtos/src';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Email } from './entities/email.entity';
 import { Repository } from 'typeorm';

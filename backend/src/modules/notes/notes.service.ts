@@ -5,8 +5,8 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { EntityManager, Repository } from 'typeorm';
 import { User } from '../user/entities/user.entity';
 import { Notes } from './entities/notes.entity';
-import { type CreateNotesRequestDto, type UpdateNotesRequestDto } from '@lib/dtos';
-import { UserRoleEnum } from '@lib/types';
+import { type CreateNotesRequestDto, type UpdateNotesRequestDto } from '../../../libs/dtos/src';
+import { UserRoleEnum } from '../../../libs/types/src';
 @Injectable()
 export class NotesService {
   constructor(

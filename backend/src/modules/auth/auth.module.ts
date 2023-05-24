@@ -21,7 +21,7 @@ import { OauthUser } from '../user/entities/useroauth.entity';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { PassportModule } from '@nestjs/passport';
 import { ConfigService } from '@nestjs/config';
-import { ConfigEnum, type IJwtConfig } from '@lib/types';
+import { ConfigEnum, type IJwtConfig } from '../../../libs/types/src';
 import { MailModule } from '../mail/mail.module';
 import { UserTransactionActionTypes } from '../user/entities/user.transaction.actiontypes.entity';
 import { Token } from './entities/token.entity';

@@ -1,32 +1,32 @@
-import { IsEnum, IsNotEmpty, IsString } from 'class-validator'
-import { SocialProviderEnum, UserInterestedGenderEnum, UserSelfGenderEnum } from '@lib/types'
+import { IsEnum, IsNotEmpty, IsString } from 'class-validator';
+import { SocialProviderEnum, UserInterestedGenderEnum, UserSelfGenderEnum } from '../../../types/src';
 
 export class SocialLoginRequestDto {
   @IsString()
   @IsNotEmpty()
-    token: string
+  token: string;
 
   @IsNotEmpty()
   @IsEnum(SocialProviderEnum)
-    socialProvider: SocialProviderEnum
+  socialProvider: SocialProviderEnum;
 
-    @IsString()
+  @IsString()
   @IsNotEmpty()
-    userName: string
+  userName: string;
 
-    @IsString()
+  @IsString()
   @IsNotEmpty()
-    email: string
+  email: string;
 
-    @IsString()
+  @IsString()
   @IsNotEmpty()
-    password: string
+  password: string;
 
-    @IsNotEmpty()
+  @IsNotEmpty()
   @IsEnum(UserSelfGenderEnum)
-    selfGender: UserSelfGenderEnum
+  selfGender: UserSelfGenderEnum;
 
-    @IsNotEmpty()
+  @IsNotEmpty()
   @IsEnum(UserInterestedGenderEnum)
-    interestedGender: UserInterestedGenderEnum
+  interestedGender: UserInterestedGenderEnum;
 }
