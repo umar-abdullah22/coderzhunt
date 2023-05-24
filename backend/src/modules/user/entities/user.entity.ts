@@ -26,10 +26,10 @@ import { Favorite } from './customer.favourite.entity';
 import { Address } from './user.address.entity';
 import { Block } from './user.block.entity';
 import { Photo } from './user.photos.entity';
-import { Payments } from 'src/modules/payments/entities/payment.entity';
+import { Payments } from '../../payments/entities/payment.entity';
 import { FallOutUsers } from './user.fallout.entity';
-import { BonusCode } from 'src/modules/auth/entities/bonusCode.entity';
-import { UserBonusCode } from 'src/modules/auth/entities/userBonusCode.entity';
+import { BonusCode } from '../../auth/entities/bonusCode.entity';
+import { UserBonusCode } from '../../auth/entities/userBonusCode.entity';
 @Entity({ name: 'user' })
 export class User implements IUser {
   constructor(params?: IUserParams) {

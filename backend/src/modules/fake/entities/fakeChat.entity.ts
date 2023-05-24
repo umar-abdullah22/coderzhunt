@@ -1,4 +1,4 @@
-import { Chat } from 'src/modules/chat/entities/chat.entity';
+import { Chat } from '../../chat/entities/chat.entity';
 import {
   UserSelfGenderEnum,
   UserInterestedGenderEnum,
