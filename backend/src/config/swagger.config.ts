@@ -1,5 +1,5 @@
 /* eslint-disable quotes */
-import { version } from 'package.json';
+import { version } from '../../../backend/package.json';
 import { registerAs } from '@nestjs/config';
 import { ConfigEnum } from '../../libs/types/src';
 
