@@ -12,7 +12,7 @@ const ORMConfig: TypeOrmModuleOptions = {
   username: process.env.DB_USERNAME || 'root',
   password: process.env.DB_PASSWORD || 'password',
   database: process.env.DB_DATABASE || 'zizle',
-  synchronize: true,
+  // synchronize: true,
   entities: [ENTITIES_DIR],
   autoLoadEntities: true,
   migrations: [MIGRATIONS_DIR],
