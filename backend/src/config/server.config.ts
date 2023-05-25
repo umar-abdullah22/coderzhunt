@@ -6,7 +6,9 @@ export default registerAs(
   (): IServerConfig => ({
     port: parseInt(process.env.BACKEND_APP_PORT, 10) || 5500,
     productName: process.env.PRODUCT_NAME,
-    frontendUrl: process.env.FRONTEND_URL,
+    frontendUrlClient: process.env.FRONTEND_URL_CLIENT,
+    frontendUrlAdmin: process.env.FRONTEND_URL_ADMIN,
+    frontendUrlModerator: process.env.FRONTEND_URL_MODERATOR,
     backendUrl: process.env.BACKEND_URL,
     authOtpVerificationLink: process.env.AUTH_OTP_VERIFICATION_LINK,
     authLoginLink: process.env.AUTH_LOGIN_LINK,

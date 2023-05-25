@@ -89,11 +89,22 @@ export class GoogleClient {
       ) {
         throw new HttpException('User needs Verification!', HttpStatus.NOT_FOUND);
       }
-      const { frontendUrl, authLoginLink, productName } = this.configService.get<IServerConfig>(ConfigEnum.SERVER);
+      const { frontendUrlClient, frontendUrlAdmin, frontendUrlModerator, authLoginLink, productName } =
+        this.configService.get<IServerConfig>(ConfigEnum.SERVER);
       const message = `Thank you very much for registering with ZIZLE. To make your
 profile even more attractive and to receive more inquiries, please upload a profile picture.
 This will make your profile more visible to others. We will always keep you up to date stand
 and inform you about voucher codes and much more. Your ZIZLE support team.`;
+      let frontendUrl = '';
+      if (user.role === UserRoleEnum.CUSTOMER) {
+        frontendUrl = frontendUrlClient;
+      }
+      if (user.role === UserRoleEnum.MODERATOR) {
+        frontendUrl = frontendUrlModerator;
+      }
+      if (user.role === UserRoleEnum.ADMIN) {
+        frontendUrl = frontendUrlAdmin;
+      }
       this.mailService.sendWelcomeMail(user?.email, {
         authLoginLink: frontendUrl,
         firstName: user?.firstName,

@@ -255,12 +255,12 @@ let ChatService = class ChatService {
             if (online === false) {
                 await this.userService.updateOnlineStatus(sender, true);
             }
-            const { frontendUrl } = this.configService.get(src_1.ConfigEnum.SERVER);
+            const { frontendUrlClient } = this.configService.get(src_1.ConfigEnum.SERVER);
             this.mailService.sendFakeMessageMail(subject, {
                 firstName: user === null || user === void 0 ? void 0 : user.userName,
                 message: message,
                 email: user === null || user === void 0 ? void 0 : user.email,
-                authLoginLink: frontendUrl,
+                authLoginLink: frontendUrlClient,
             }, receiver === null || receiver === void 0 ? void 0 : receiver.email);
         }
     }

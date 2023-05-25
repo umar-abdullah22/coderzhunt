@@ -291,14 +291,14 @@ export class ChatService {
       if (online === false) {
         await this.userService.updateOnlineStatus(sender, true);
       }
-      const { frontendUrl } = this.configService.get<IServerConfig>(ConfigEnum.SERVER);
+      const { frontendUrlClient } = this.configService.get<IServerConfig>(ConfigEnum.SERVER);
       this.mailService.sendFakeMessageMail(
         subject,
         {
           firstName: user?.userName,
           message: message,
           email: user?.email,
-          authLoginLink: frontendUrl,
+          authLoginLink: frontendUrlClient,
         },
         receiver?.email
       );

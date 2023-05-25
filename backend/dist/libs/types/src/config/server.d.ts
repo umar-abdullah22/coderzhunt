@@ -9,7 +9,9 @@ export interface IServerConfig {
     port: number;
     admin: IServerConfigAdmin;
     productName: string;
-    frontendUrl: string;
+    frontendUrlClient: string;
+    frontendUrlAdmin: string;
+    frontendUrlModerator: string;
     backendUrl: string;
     authOtpVerificationLink: string;
     authLoginLink: string;
@@ -18,7 +20,9 @@ export declare enum ServerConfigEnum {
     PORT = "port",
     ADMIN = "admin",
     PRODUCT_NAME = "productName",
-    FRONTEND_URL = "frontendUrl",
+    FRONTEND_URL_CLIENT = "frontendUrlClient",
+    FRONTEND_URL_ADMIN = "frontendUrlAdmin",
+    FRONTEND_URL_MODERATOR = "frontendUrlModerator",
     BACKEND_URL = "backendUrl",
     AUTH_OTP_VERIFICATION_LINK = "authOtpVerificationLink",
     AUTH_LOGIN_LINK = "authLoginLink"

@@ -215,11 +215,21 @@ let AuthService = class AuthService {
                 status: src_2.UserStatusEnum.VERIFIED,
             };
             await this.updateUserStatus(updateStatusDto);
-            const { frontendUrl, authLoginLink, productName } = this.configService.get(src_2.ConfigEnum.SERVER);
+            const { frontendUrlClient, frontendUrlAdmin, frontendUrlModerator, authLoginLink, productName } = this.configService.get(src_2.ConfigEnum.SERVER);
             const message = `Thank you very much for registering with ZIZLE. To make your
 profile even more attractive and to receive more inquiries, please upload a profile picture.
 This will make your profile more visible to others. We will always keep you up to date stand
 and inform you about voucher codes and much more. Your ZIZLE support team.`;
+            let frontendUrl = '';
+            if (user.role === src_2.UserRoleEnum.CUSTOMER) {
+                frontendUrl = frontendUrlClient;
+            }
+            if (user.role === src_2.UserRoleEnum.MODERATOR) {
+                frontendUrl = frontendUrlModerator;
+            }
+            if (user.role === src_2.UserRoleEnum.ADMIN) {
+                frontendUrl = frontendUrlAdmin;
+            }
             this.mailService.sendWelcomeMail(user === null || user === void 0 ? void 0 : user.email, {
                 authLoginLink: frontendUrl,
                 firstName: user === null || user === void 0 ? void 0 : user.firstName,
@@ -264,9 +274,9 @@ and inform you about voucher codes and much more. Your ZIZLE support team.`;
             token: newToken,
         });
         await this.tokenRepository.save(token);
-        const { productName, frontendUrl } = this.configService.get(src_2.ConfigEnum.SERVER);
+        const { productName, frontendUrlClient } = this.configService.get(src_2.ConfigEnum.SERVER);
         this.mailService.sendResetPasswordMail(user.email, {
-            authOtpVerificationLink: `${frontendUrl}/auth/reset-password?token=${token.token}`,
+            authOtpVerificationLink: `${frontendUrlClient}/auth/reset-password?token=${token.token}`,
             firstName: user.firstName,
             productName,
         });

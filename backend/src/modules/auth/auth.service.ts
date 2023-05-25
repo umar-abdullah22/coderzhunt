@@ -309,11 +309,22 @@ export class AuthService {
       };
       await this.updateUserStatus(updateStatusDto);
 
-      const { frontendUrl, authLoginLink, productName } = this.configService.get<IServerConfig>(ConfigEnum.SERVER);
+      const { frontendUrlClient, frontendUrlAdmin, frontendUrlModerator, authLoginLink, productName } =
+        this.configService.get<IServerConfig>(ConfigEnum.SERVER);
       const message = `Thank you very much for registering with ZIZLE. To make your
 profile even more attractive and to receive more inquiries, please upload a profile picture.
 This will make your profile more visible to others. We will always keep you up to date stand
 and inform you about voucher codes and much more. Your ZIZLE support team.`;
+      let frontendUrl = '';
+      if (user.role === UserRoleEnum.CUSTOMER) {
+        frontendUrl = frontendUrlClient;
+      }
+      if (user.role === UserRoleEnum.MODERATOR) {
+        frontendUrl = frontendUrlModerator;
+      }
+      if (user.role === UserRoleEnum.ADMIN) {
+        frontendUrl = frontendUrlAdmin;
+      }
       this.mailService.sendWelcomeMail(user?.email, {
         authLoginLink: frontendUrl,
         firstName: user?.firstName,
@@ -366,10 +377,10 @@ and inform you about voucher codes and much more. Your ZIZLE support team.`;
       token: newToken,
     });
     await this.tokenRepository.save(token);
-    const { productName, frontendUrl } = this.configService.get<IServerConfig>(ConfigEnum.SERVER);
+    const { productName, frontendUrlClient } = this.configService.get<IServerConfig>(ConfigEnum.SERVER);
 
     this.mailService.sendResetPasswordMail(user.email, {
-      authOtpVerificationLink: `${frontendUrl}/auth/reset-password?token=${token.token}`,
+      authOtpVerificationLink: `${frontendUrlClient}/auth/reset-password?token=${token.token}`,
       firstName: user.firstName,
       productName,
     });

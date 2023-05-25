@@ -33,7 +33,6 @@ let ChatsGateway = class ChatsGateway {
         this.moderatorSockets = new Map();
     }
     afterInit(server) {
-        console.log('Initialized');
     }
     async handleConnection(socket, _) {
         var _a, _b, _c;
