@@ -45,7 +45,7 @@ export class ChatsGateway implements OnGatewayInit, OnGatewayConnection, OnGatew
   connectedClients = new Map<string, Socket>();
   moderatorSockets = new Map<string, Socket>();
   afterInit(server: any) {
-    console.log('Initialized');
+    // console.log('Initialized');
   }
 
   async handleConnection(socket: Socket, _: any) {
