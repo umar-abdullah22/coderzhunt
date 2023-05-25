@@ -30,7 +30,9 @@ export const ConnectionProvider = (props) => {
   const currentUser = JSON.parse(localStorage.getItem('user'));
 
   const connectSocket = (accessToken) => {
-    const newSocket = io(SOCKET_URL, { transports: ['websocket'], query: { token: accessToken } });
+    const newSocket = io(
+      // SOCKET_URL, { transports: ['websocket'], query: { token: accessToken } }
+    );
     setSocket(newSocket);
     return newSocket;
   };
