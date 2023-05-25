@@ -9,7 +9,7 @@ import { useUser } from '../providers/useUser';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
-const SOCKET_URL = process.env.SOCKET_IO_URL || 'http://localhost:5500';
+const SOCKET_URL = process.env.SOCKET_IO_URL || 'https://coderzhunt-backend-zizle.vercel.app';
 
 const ConnectionContext = createContext();
 
