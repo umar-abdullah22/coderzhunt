@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { toast } from 'react-toastify';
-const BASE_URL = 'http://localhost:5500/api';
+const BASE_URL = 'https://coderzhunt-backend-zizle.vercel.app/api';
 
 const accessToken =JSON.parse( localStorage.getItem('token'));
 const config = {

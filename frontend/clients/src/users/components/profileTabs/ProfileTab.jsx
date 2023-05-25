@@ -19,7 +19,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { clearUser } from '../../../store/slices/userAuth/userAuthSlice'
 import { useDispatch } from 'react-redux';
 import { useUser } from '../../../providers/useUser';
-const BASE_URL = 'http://localhost:5500/api/customer';
+const BASE_URL = 'https://coderzhunt-backend-zizle.vercel.app/api/customer';
 const style = {
   position: 'absolute',
   top: '50%',

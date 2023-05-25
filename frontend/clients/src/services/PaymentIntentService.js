@@ -18,7 +18,7 @@ export const createPaymentIntent = async (cart, currency) => {
         },
     };
     try {
-        const transaction = await axios.post("http://localhost:5500/api/payments/stripe", {
+        const transaction = await axios.post("https://coderzhunt-backend-zizle.vercel.app/api/payments/stripe", {
             products: products,
             currency: currency,
             token: accessToken

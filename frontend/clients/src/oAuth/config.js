@@ -1,4 +1,4 @@
-const BASE_URL = process.env.REACT_APP_BASE_API_URL ?? 'http://localhost:5500/api';
+const BASE_URL = process.env.REACT_APP_BASE_API_URL ?? 'https://coderzhunt-backend-zizle.vercel.app/api';
 
 const APIS = {
     CHECK_EMAILS: `${BASE_URL}/auth/users`,
