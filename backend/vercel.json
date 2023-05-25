@@ -8,6 +8,10 @@
     ],
     "routes":[
         {
+      "src": "/socket.io/.*",
+      "dest": "src/modules/chat/chat.gateway.ts>"
+    },
+        {
             "src":"/(.*)",
             "dest":"src/main.ts",
             "headers": {
