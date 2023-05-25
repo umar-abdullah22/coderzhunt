@@ -22,6 +22,11 @@ export class CustomHeadersMiddleware implements NestMiddleware {
       'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
     );
     res.setHeader('Access-Control-Allow-Credentials', 'true');
+    if (req.method === 'OPTIONS') {
+      return res.status(200).json({
+        body: 'OK',
+      });
+    }
 
     next();
   }
