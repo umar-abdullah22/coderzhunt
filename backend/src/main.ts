@@ -31,7 +31,13 @@ async function bootstrap() {
   const swaggerDocument = SwaggerModule.createDocument(app, swaggerConfigDoc);
   SwaggerModule.setup('api', app, swaggerDocument);
   app.useGlobalPipes(new ValidationPipe());
-  app.enableCors();
+  app.enableCors({
+    origin: [
+      'https://coderzhunt-admin-zizle.vercel.app',
+      'https://coderzhunt-moderator-zizle.vercel.app',
+      'https://coderzhunt-zizle.vercel.app',
+    ],
+  });
   await app.listen(SERVER_PORT);
   logger.log(`Server is running on: ${await app.getUrl()}`);
 }
