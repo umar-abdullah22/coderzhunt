@@ -55,8 +55,9 @@ export const TypeOrmAsyncConfig: TypeOrmModuleAsyncOptions = {
   providers: [CloudinaryConfigService],
   exports: [CloudinaryConfigService],
 })
-export class AppModule implements NestModule {
-  configure(consumer: MiddlewareConsumer) {
-    consumer.apply(CustomHeadersMiddleware).forRoutes('*');
-  }
+export class AppModule {
+  // implements NestModule {
+  // configure(consumer: MiddlewareConsumer) {
+  //   consumer.apply(CustomHeadersMiddleware).forRoutes('*');
+  // }
 }
