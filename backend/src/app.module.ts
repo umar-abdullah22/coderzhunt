@@ -1,7 +1,7 @@
 import { CloudinaryConfigService } from './config/cloudinary.config';
 // import { OrmConfig } from './config/orm.config copy';
 import { FakeModule } from './modules/fake/fake.module';
-import { Module } from '@nestjs/common';
+import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 // config imports
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule, type TypeOrmModuleAsyncOptions, type TypeOrmModuleOptions } from '@nestjs/typeorm';
@@ -22,6 +22,7 @@ import { ChatModule } from './modules/chat/chat.module';
 import { AnnouncementsModule } from './modules/announcement/announcement.module';
 import { CoinsModule } from './modules/coins/coins.module';
 import { PaymentsModule } from './modules/payments/payments.module';
+import { CustomHeadersMiddleware } from './customHeaders';
 export const typeOrmConfig: TypeOrmModuleOptions = ORMConfig as any;
 export const TypeOrmAsyncConfig: TypeOrmModuleAsyncOptions = {
   imports: [ConfigModule],
@@ -54,4 +55,8 @@ export const TypeOrmAsyncConfig: TypeOrmModuleAsyncOptions = {
   providers: [CloudinaryConfigService],
   exports: [CloudinaryConfigService],
 })
-export class AppModule {}
+export class AppModule implements NestModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer.apply(CustomHeadersMiddleware).forRoutes('*');
+  }
+}
