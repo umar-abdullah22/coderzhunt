@@ -30,17 +30,11 @@ async function bootstrap() {
 
   const swaggerDocument = SwaggerModule.createDocument(app, swaggerConfigDoc);
   SwaggerModule.setup('api', app, swaggerDocument);
-  app.useGlobalPipes(new ValidationPipe());
-  app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type, Accept');
-    next();
-  });
-
   app.enableCors({
     allowedHeaders: '*',
     origin: '*',
+    credentials: true,
+    methods: '*',
   });
   await app.listen(SERVER_PORT);
   logger.log(`Server is running on: ${await app.getUrl()}`);
